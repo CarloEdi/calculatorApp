@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.calculator {
+  border-style:solid;
+  width: 496px;
+  margin: auto;
+  margin-top: 5%;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+.screen-container {
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.previous-number {
+  text-align: end;
+  font-size: 2rem;
+}
+.number-symbol-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.math-symbol {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+.current-number {
+  display: flex;
+  font-size: 3rem; 
+  align-items: center;
+  height: 60px;
+}
+.AC {
+  grid-area: AC;
+  background-color: black;
+  color: aqua;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.BACK {
+  grid-area: BACK;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.divide {
+  grid-area: divide;
+}
+.seven {
+  grid-area: seven;
+}
+.eight {
+  grid-area: eight;
+}
+.nine {
+  grid-area: nine;
+}
+.x {
+  grid-area: x;
+}
+.four {
+  grid-area: four;
+}
+.five {
+  grid-area: five;
+}
+.six {
+  grid-area: six;
+}
+.minus {
+  grid-area: minus;
+}
+.one {
+  grid-area: one;
+}
+.two {
+  grid-area: two;
+}
+.three {
+  grid-area: three;
+}
+.plus {
+  grid-area: plus;
+}
+.zero {
+  grid-area: zero;
+}
+.decimal {
+  grid-area: decimal;
+}
+.positive-negative {
+  grid-area: pos-neg;
+}
+.equals {
+  grid-area: equals;
+  background-color: aqua;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.calc-buttons-container {
+  padding: 14px;
+  width: 496px;
+  height: 500px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "AC AC AC BACK BACK BACK divide divide"
+  "seven seven eight eight nine nine x x "
+  "four four five five six six minus minus"
+  "one one two two three three plus plus"
+  "zero zero decimal decimal  pos-neg pos-neg equals equals"
+
+}
+.number-button {
+  background-color:rgb(0, 3, 6);
+  color: whitesmoke;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.symbol-button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
